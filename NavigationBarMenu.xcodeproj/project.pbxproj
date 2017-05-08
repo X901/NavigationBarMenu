@@ -96,7 +96,6 @@
 				TargetAttributes = {
 					FD1121481EC0DB8600DEFB02 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = CP92CMD5E4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CP92CMD5E4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NavigationBarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Basil.Baragabah.NavigationBarMenu;
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CP92CMD5E4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NavigationBarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Basil.Baragabah.NavigationBarMenu;

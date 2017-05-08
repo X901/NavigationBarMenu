@@ -1,26 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3KC-DH-c2Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationBarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKq-5O-3AW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="aNj-IY-mK6">
+                                        <rect key="frame" x="58" y="0.0" width="258" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFY-Ay-8hf">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="50"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="search">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aX-Bm-MqM">
+                                                <rect key="frame" x="106" y="0.0" width="46" height="50"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="notification">
+                                                    <color key="titleColor" red="0.48233252760000001" green="0.50191593170000004" blue="0.53713750839999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzy-ax-US0">
+                                                <rect key="frame" x="212" y="0.0" width="46" height="50"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="info">
+                                                    <color key="titleColor" red="0.48233252760000001" green="0.50191593170000004" blue="0.53713750839999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="u7X-I4-llR"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97807776489999998" green="0.99029391170000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aNj-IY-mK6" firstAttribute="leading" secondItem="uKq-5O-3AW" secondAttribute="leading" constant="58" id="55T-kR-RCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="aNj-IY-mK6" secondAttribute="trailing" constant="59" id="8uC-JN-n2y"/>
+                                    <constraint firstItem="aNj-IY-mK6" firstAttribute="top" secondItem="uKq-5O-3AW" secondAttribute="top" id="O1p-5q-6Yq"/>
+                                    <constraint firstAttribute="bottom" secondItem="aNj-IY-mK6" secondAttribute="bottom" id="Oka-9m-RbW"/>
+                                    <constraint firstAttribute="bottom" secondItem="aNj-IY-mK6" secondAttribute="bottom" id="mR2-lG-bDE"/>
+                                    <constraint firstItem="aNj-IY-mK6" firstAttribute="top" secondItem="uKq-5O-3AW" secondAttribute="top" id="r18-Cb-7FY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uKq-5O-3AW" secondAttribute="trailing" id="bWp-c9-zyh"/>
+                            <constraint firstItem="uKq-5O-3AW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dKI-wS-jyz"/>
+                            <constraint firstItem="uKq-5O-3AW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vgi-aG-cyE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Menu" id="nTx-Zi-V1V"/>
+                    <connections>
+                        <outlet property="menuTop" destination="dKI-wS-jyz" id="kbc-Us-CLX"/>
+                        <outlet property="menuView" destination="uKq-5O-3AW" id="fs4-rq-aoX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="-545.57721139430294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bZT-fg-XaY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3KC-DH-c2Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="BWi-uX-SVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.62633298555365902" green="0.85824476520000004" blue="0.44064796124490607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5kw-6L-M5K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPY-tA-0dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-543.77811094452773"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info" width="30" height="30"/>
+        <image name="notification" width="26" height="28"/>
+        <image name="search" width="28" height="27"/>
+    </resources>
 </document>
